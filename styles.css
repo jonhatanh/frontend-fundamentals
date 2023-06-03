@@ -1,0 +1,71 @@
+p {
+  color: #46484c;
+}
+
+body {
+  background: #fffbf7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  color: #fff;
+  background-color: #025157;
+}
+
+h1 {
+  color: #46484c;
+  text-align: center;
+}
+
+.imagen {
+  margin-top: 5em;
+  padding: 1em;
+  border: #025157 dashed 2px;
+  max-width: 500px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav {
+  width: 70%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #025157;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* .links {
+    width: 60%;
+} */
+
+.btn.subscribe {
+  /* display: inline; */
+  width: 10%;
+}
+
+li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 1em;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* li {
+    text-decoration: none;
+} */
