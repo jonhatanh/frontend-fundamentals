@@ -17,7 +17,7 @@
         <h1>Frontend Fundamentals</h1>
     </header>
     <nav>
-        <img width="8%" src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="Logo">
+        <img class="logo" width="8%" src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="Logo">
         <ul class="links">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Cursos</a></li>
@@ -25,21 +25,29 @@
         </ul>
         <button class="btn subscribe">Subscribe</button>
     </nav>
-    <h2>Sesion 1</h2>
-    <p>Construye tu blog...</p>
-    <p>Con esta herramienta, podrás crear tu página <b>rápida y facilmente</b> </p>
+    <section class="contenedor">
+        <h2>Sesion 1</h2>
+        <p>Construye tu blog...</p>
+        <p>Con esta herramienta, podrás crear tu página <b>rápida y facilmente</b> </p>
+        <p>Registrate con el siguiente formulario: </p>
+    
+        <form action="">
+            <div class="form-control">
+                <label for="correo">Correo: </label>
+                <input type="email" name="correo" required>
+            </div>
+            <button type="submit" class="btn">Registrarse</button>
+        </form>
+    
+        <img class="imagen" src="https://www.matchamexico.mx/wp-content/uploads/2023/01/AMAZON-CAMPOS.jpg"
+            alt="Imagen Matcha">
 
-    <form action="">
-        <input type="text">
-        <input type="date">
-        <input type="number">
-        <button>Aceptar</button>
-    </form>
+    </section>
 
-    <img class="imagen" src="https://www.matchamexico.mx/wp-content/uploads/2023/01/AMAZON-CAMPOS.jpg"
-        alt="Imagen Matcha">
+    <footer>
+        <img class="logo" src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="Imagen capterra" />
 
-    <img class="logo" src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="Imagen capterra" />
+    </footer>
 
 
     <!-- Diferencia entre px y rem -->
