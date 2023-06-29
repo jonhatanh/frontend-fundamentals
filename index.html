@@ -17,6 +17,7 @@
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles2.css">
     <link rel="stylesheet" href="./responsive.css">
 
 
@@ -51,13 +52,13 @@
             <img class="logo" src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="Logo">
         </div>
         <div class="nav-button">
-            <button class="menu-button btn" @click="open = !open"><i class="bi bi-list"></i></button>
+            <button class="menu-button btn btn-animation" @click="open = !open"><i class="bi bi-list"></i></button>
         </div>
         <ul class="nav-links" x-ref="nav">
             <li><a href="#">Blog</a></li>
             <li><a href="#">Cursos</a></li>
             <li><a href="#">Ayuda</a></li>
-            <li><button class="btn subscribe">Subscribe</button></li>
+            <li><button class="btn btn-animation subscribe"><span>Subscribe</span></button></li>
         </ul>
     </nav>
     <section class="contenedor">
@@ -71,7 +72,7 @@
                 <label for="correo">Correo: </label>
                 <input type="email" name="correo" required>
             </div>
-            <button type="submit" class="btn">Registrarse</button>
+            <button type="submit" class="btn btn-animation">Registrarse</button>
         </form>
 
         <img class="imagen" src="https://www.matchamexico.mx/wp-content/uploads/2023/01/AMAZON-CAMPOS.jpg"
@@ -85,7 +86,7 @@
                     poster="https://cms.kerrang.com/images/twenty-one-pilots-Trench-header-album-cover.jpg">
                     <source src="./media/20190506_215844_Trim.mp4" type="video/mp4">
                 </video>
-                <img width="150px"
+                <img
                     src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png"
                     alt="Mira que genial">
             </div>
@@ -100,7 +101,7 @@
                         <label for="correo">Correo: </label>
                         <input type="email" name="correo" required>
                     </div>
-                    <button type="submit" class="btn">¡Registrate pls!</button>
+                    <button type="submit" class="btn btn-animation">¡Registrate pls!</button>
                 </form>
             </div>
         </div>
@@ -118,7 +119,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet harum neque accusantium maxime a
                     rerum reiciendis. Hic dignissimos dicta veniam, nihil reprehenderit modi, recusandae neque fugit
                     culpa id, laboriosam deleniti.</p>
-                <button class="btn">Registrarse ¡YA!</button>
+                <button class="btn btn-animation">Registrarse ¡YA!</button>
                 <img src="./img/marcas2.png" alt="Marcas afiliadas">
             </div>
             <div class="card">
@@ -128,7 +129,7 @@
                     <h4>Everly</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, deleniti.</p>
                     <span><i class="bi bi-cart"></i> Lorem ipsum dolor sit amet consecteturc Lorem, ipsum.</span>
-                    <button>Ya no se que poner</button>
+                    <button class="btn-animation">Ya no se que poner</button>
                 </div>
             </div>
         </div>
@@ -195,7 +196,7 @@
             <h2>How does Matcha work?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, perferendis quam. Animi aperiam iure
                 minima perferendis aliquam a, ipsum deleniti ullam.</p>
-            <button class="btn">Explore the Platform</button>
+            <button class="btn btn-animation">Explore the Platform</button>
         </div>
         <div class="planes">
             <div class="card">
@@ -245,14 +246,17 @@
         </div>
     </section>
     <section class="call">
-        <img src="./svg/Audio conversation.svg" alt="Conversation">
-        <h4>Try Matcha free for 14 days</h>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,128L40,154.7C80,181,160,235,240,261.3C320,288,400,288,480,282.7C560,277,640,267,720,234.7C800,203,880,149,960,138.7C1040,128,1120,160,1200,149.3C1280,139,1360,85,1400,58.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+        <div class="img-container">
+            <img src="./svg/Audio conversation.svg" alt="Conversation">
+        </div>
+        <h4>Try Matcha free for 14 days</h4>
         <form>
-            <div class="">
-                <input type="email" name="email"/><button>Sing Up Free <i class="bi bi-arrow-right"></i></button>
+            <div class="input-button">
+                <input type="email" name="email" placeholder="Enter email address"/><button class="btn-animation"><span>Sing Up Free</span> <i class="bi bi-arrow-right"></i></button>
             </div>
         </form>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iste, reprehenderit saepe ipsa minus assumenda!</p>
+        <p>Start publishing today with a free 14-day trial. <br><b>No credit card required.</b></p>
     </section>
 
 
@@ -260,19 +264,20 @@
         <div>
             <h4>Ready to build sustainable growth with Matcha?</h4>
             <form>
-                <div class="">
-                    <input type="email" name="email"/><button>Sing Up Free <i class="bi bi-arrow-right"></i></button>
+                <div class="input-button">
+                    <input type="email" name="email" placeholder="Enter email address"/><button class="btn-animation">Sing Up Free <i class="bi bi-arrow-right"></i></button>
                 </div>
             </form>
             <p>Want to learn more? <a href="#">Schedule a demo <i class="bi bi-arrow-right"></i></a></p>
         </div>
-        <div>
+        <div class="links">
             <div>
                 <p><strong>Platform</strong></p>
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
                 <a href="#">Link 4</a>
+                <a href="#">Link 5</a>
             </div>
             <div>
                 <p><strong>Platform</strong></p>

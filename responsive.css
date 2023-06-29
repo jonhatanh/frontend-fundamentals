@@ -21,6 +21,7 @@
     padding-right: 2rem;
   }
   .contenedor-video > .info {
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,9 +31,6 @@
   .contenedor-video > .info > h2 {
     font-size: 1.5rem;
     text-align: center;
-  }
-  .flecha {
-    left: 39%;
   }
 }
 @media (min-width: 1024px) {
@@ -74,9 +72,6 @@
   }
   .contenedor-video div:first-child {
     order: 0;
-  }
-  .contenedor-video div:first-child img {
-    margin-left: 5rem;
   }
   .contenedor-color {
     padding: 0 5rem;

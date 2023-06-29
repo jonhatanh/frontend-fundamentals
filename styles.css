@@ -181,6 +181,7 @@ form > button {
 }
 .video-container > video {
   max-width: 100%;
+  border-radius: 15% 1rem 1rem 1rem;
 }
 .contenedor-video > .info {
   display: flex;
@@ -195,7 +196,8 @@ form > button {
 }
 
 .contenedor-video > div img{
-  margin-left: 24rem;
+  display: block;
+  margin: 0 auto;
   max-width: 5rem;
 }
 
@@ -404,7 +406,9 @@ form > p {
   position: absolute;
   width: 5rem;
   top: 103%;
-  left: 35%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 10;
 }
 .flecha img {
